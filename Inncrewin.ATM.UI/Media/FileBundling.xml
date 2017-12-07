@@ -1,0 +1,147 @@
+﻿<Bundling>
+
+  <!--Master CSS Files -->
+  <Cascade Name="~/Bundles/MasterCSS.css">
+    <Path>~/Media/vendor/jquery-v1.11.3/jquery-ui.css</Path>
+    <Path>~/Media/travel-vendor/bootstrap/css/bootstrap.min.css</Path>
+    <Path>~/Media/travel-vendor/bootstrap/css/bootstrap-theme.min.css</Path>
+    <Path>~/Media/travel-vendor/slider/tinycarousel.css</Path>
+    <Path>~/Media/css/block.css</Path>
+    <Path>~/Media/css/styles-new.css</Path>
+    <Path>~/Media/css/responsive-fluid.css</Path>
+    <Path>~/Media/css/Sonata-theme.css</Path>
+  </Cascade>
+
+  <!--Master JavaScript Files -->
+  <JavaScript Name="~/Bundles/MasterJS.js">
+    <Path>~/Media/travel-vendor/bootstrap/js/bootstrap.min.js</Path>
+    <Path>~/Media/vendor/jquery-v1.11.3/jquery-ui.min.js</Path>
+    <Path>~/Media/Vendor/jquery/jquery.maskedinput.min.js</Path>
+    <Path>~/Media/Vendor/jquery/jquery-ui-i18n.js</Path>
+    <Path>~/Media/Vendor/jquery/moment.min.js</Path>
+    <Path>~/Media/travel-vendor/slider/jquery.tinycarousel.js</Path>
+    <Path>~/Media/js/blockUI.js</Path>
+    <Path>~/Media/js/common.js</Path>
+    <Path>~/Media/js/PostifyData.js</Path>
+    <Path>~/Media/js/serviceproxy.js</Path>
+  </JavaScript>
+
+
+  <!--Login -->
+  <JavaScript Name="~/Bundles/LoginJS.js">
+    <Path>~/Media/vendor/jquery/jquery.validate.min.js</Path>
+    <Path>~/Media/vendor/jquery/jquery.validate.unobtrusive.min.js</Path>
+  </JavaScript>
+
+  <!--DashBoard-->
+  <JavaScript Name="~/Bundles/DashboardJS.js">
+    <Path>~/Media/js/TravelRequest/TravelRequestDashboard.js</Path>
+    <Path>~/Media/js/TravelRequest/travel-common.js</Path>
+
+  </JavaScript>
+
+
+  <!--Employee Profile -->
+  <JavaScript Name="~/Bundles/EmployeeJS.js">
+    <Path>~/Media/js/Employee/Employee.js</Path>
+    <Path>~/Media/js/TravelRequest/TravelRequestDetail.js</Path>
+    <Path>~/Media/js/TravelRequest/TravelRequest.js</Path>
+    <Path>~/Media/js/TravelRequest/LoadProjects.js</Path>
+    <Path>~/Media/js/TravelRequest/travel-common.js</Path>
+  </JavaScript>
+
+
+  <!--b2e-Hotel -->
+  <JavaScript Name="~/Bundles/b2eHotelJS.js">
+    <Path>~/Media/js/blockUI.js</Path>
+    <Path>~/Media/JS/Hotel/hotelfarefinder.js</Path>
+    <Path>~/Media/JS/TravelItinerary/AddToItinerary.js</Path>
+    <Path>~/Media/Vendor/jquery/jquery.maskedinput.min.js</Path>
+  </JavaScript>
+  <Cascade Name="~/Bundles/b2eHotelCSS.css">
+    <Path>~/Media/css/block.css</Path>
+    <Path>~/Media/Vendor/fselect/fSelect.css</Path>
+  </Cascade>
+
+  <!--TravelRequestDetail -->
+  <JavaScript Name="~/Bundles/TravelRequestDetailJS.js">
+    <Path>~/Media/js/TravelRequest/TravelRequestDetail.js</Path>
+    <Path>~/Media/js/TravelRequest/TravelRequest.js</Path>
+    <Path>~/Media/js/TravelRequest/LoadProjects.js</Path>
+    <Path>~/Media/js/TravelRequest/travel-common.js</Path>
+    <Path>~/Media/js/fileupload/load-image.all.min.js</Path>
+    <Path>~/Media/js/fileupload/blueimp-gallery.js</Path>
+    <Path>~/Media/js/fileupload/jquery.fileupload.js</Path>
+    <Path>~/Media/js/fileupload/main.js</Path>
+  </JavaScript>
+
+  <!--TravelRequestDetail CSS Files -->
+  <Cascade Name="~/Bundles/TravelRequestDetailCSS.css">
+    <Path>~/Media/css/blueimp-gallery.css</Path>
+    <Path>~/Media/css/jquery.fileupload-ui.css</Path>
+    <Path>~/Media/css/jquery.fileupload.css</Path>
+  </Cascade>
+
+
+  <!--TravelRequest -->
+  <JavaScript Name="~/Bundles/TravelRequestJS.js">
+    <Path>~/Media/js/TravelRequest/TravelRequest.js</Path>
+    <Path>~/Media/js/TravelRequest/LoadProjects.js</Path>
+    <Path>~/Media/js/TravelRequest/travel-common.js</Path>
+  </JavaScript>
+
+
+  <!--TravelFareFinder 9-->
+  <JavaScript Name="~/Bundles/TravelFareFinderJS.js">
+    <Path>~/Media/vendor/jquery/jquery.validate.min.js</Path>
+    <Path>~/Media/vendor/jquery/jquery.validate.unobtrusive.min.js</Path>
+    <Path>~/Media/js/bootstrap-slider.min.js</Path>
+    <Path>~/Media/js/TravelItinerary/TravelFareFinder.js</Path>
+    <Path>~/Media/js/Flight/FlightFareFinder.js</Path>
+    <Path>~/Media/js/Flight/FlightSearch.js</Path>
+    <Path>~/Media/JS/TravelItinerary/AddToItinerary.js</Path>
+    <Path>~/Media/JS/Hotel/Hotel.js</Path>
+    <Path>~/Media/Vendor/fselect/fSelect.js</Path>
+    <Path>~/Media/js/TravelRequest/travel-common.js</Path>
+  </JavaScript>
+  <Cascade Name="~/Bundles/TravelFareFinderCSS.css">
+    <Path>~/Media/CSS/bootstrap-slider.min.css</Path>
+    <Path>~/Media/Vendor/fselect/fSelect.css</Path>
+  </Cascade>
+
+  <!--TMCProfile -->
+  <JavaScript Name="~/Bundles/TMCProfileJS.js">
+    <Path>~/Media/js/jquery.blockUI.js</Path>
+    <Path>~/Media/js/TravelRequest/travel-common.js</Path>
+    <Path>~/Media/js/TMCProfile/TMCProfile.js</Path>
+    <Path>~/Media/js/TravelRequest/TravelRequestDetail.js</Path>
+    <Path>~/Media/js/TravelRequest/TravelRequest.js</Path>
+  </JavaScript>
+
+
+  <!--PasswordExpired -->
+  <JavaScript Name="~/Bundles/PasswordExpiredJS.js">
+    <Path>~/Media/JS/ChangePassword.js</Path>
+  </JavaScript>
+
+  <!--HotelSearchResults -->
+  <JavaScript Name="~/Bundles/HotelSearchResultsJS.js">
+    <Path>~/Media/vendor/jquery/jquery.validate.min.js</Path>
+    <Path>~/Media/vendor/jquery/jquery.validate.unobtrusive.min.js</Path>
+    <Path>~/Media/js/HotelResults.js</Path>
+
+  </JavaScript>
+  <Cascade Name="~/Bundles/HotelSearchResultsCSS.css">
+    <Path>~/Media/vendor/jquery-v1.11.3/jquery-ui.css</Path>
+    <Path>~/Media/travel-vendor/bootstrap/css/bootstrap.min.css</Path>
+    <Path>~/Media/CSS/font-awesome.min.css</Path>
+    <Path>~/Media/css/styles.css</Path>
+  </Cascade>
+
+  <!--Error -->
+  <Cascade Name="~/Bundles/ErrorCSS.css">
+    <Path>~/Media/css/styles-new.css</Path>
+    <Path>~/Media/css/responsive-fluid.css</Path>
+  </Cascade>
+
+</Bundling>

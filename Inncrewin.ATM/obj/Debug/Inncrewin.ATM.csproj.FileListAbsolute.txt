@@ -1,0 +1,37 @@
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.dll.config
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Antlr3.Runtime.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\EntityFramework.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\EntityFramework.SqlServer.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Newtonsoft.Json.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\System.Net.Http.Formatting.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\System.Web.Http.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\System.Web.Http.WebHost.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\System.Web.Optimization.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\WebGrease.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\System.Web.Http.WebHost.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\System.Web.Optimization.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Antlr3.Runtime.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\EntityFramework.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\EntityFramework.SqlServer.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\obj\Debug\Inncrewin.ATM.csprojResolveAssemblyReference.cache
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\obj\Debug\Inncrewin.ATM.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\obj\Debug\Inncrewin.ATM.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Autofac.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Autofac.Integration.WebApi.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.Application.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.Application.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Autofac.Integration.WebApi.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\NLog.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Purplelight.Framework.Autofac.Integration.WebApi.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\NLog.xml
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.Application.BankNote.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\Inncrewin.ATM\bin\Inncrewin.ATM.Application.BankNote.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM\obj\Debug\Inncrewin.ATM.csprojResolveAssemblyReference.cache
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM\obj\Debug\Inncrewin.ATM.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM\obj\Debug\Inncrewin.ATM.pdb

@@ -1,0 +1,108 @@
+﻿<div class="rzb2enav-cont">
+    <div class="tab-pane fade in active room-Breakup-content">
+
+    </div>
+</div>
+<link rel="stylesheet" href="media/vendor/jquery-v1.11.3/jquery-ui.css">
+<link rel="stylesheet" href="media/travel-vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="media/travel-vendor/bootstrap/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="media/css/styles-new.css">
+<style>
+    .room-Breakup-Header {
+        background: #397ed1;
+        color: #fff;
+    }
+</style>
+
+<script src="http://malsup.github.io/jquery.blockUI.js"></script>
+<link rel="stylesheet" href="http://malsup.com/jquery/block/block.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="media/vendor/jquery-v1.11.3/jquery-ui.min.js"></script>
+<script src="media/travel-vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="media/js/serviceproxy.js"></script>
+
+<script>
+    var hotelRooms = {};
+
+    var Initialize = function () {
+        loadRooms();
+
+    };
+
+    //var loadRooms = function (hCode) {
+    //    debugger;
+    //    var searchRequest = searchRequestfn(hCode);
+    //    var serviceProxy = new ServiceProxy();
+    //    serviceProxy.invoke(
+    //    "Hotel/GetHotelSearch",
+    //    "POST",
+    //    searchRequest,
+    //    function (response) {
+    //        if (response != null && response.Hotel.length > 0) {
+    //            debugger;
+    //            hotelRooms = response.Hotel;
+    //            loadTemplate(response.Hotel);
+    //        }
+    //    },
+    //   function (XMLHttpRequest, textStatus, errorThrown) {
+    //   },
+    //    "json"
+    //    );
+    //};
+
+    //var searchRequestfn = function (hCode) {
+    //    hotelSearchCriteria.HotelCode = hCode;
+    //    return hotelSearchCriteria;
+
+    //    //return {
+    //    //    CountryCode: 'PH',
+    //    //    CityCode: 'CEB',
+    //    //    CheckIn: '2017-06-09',
+    //    //    CheckOut: '2017-06-12',
+    //    //    NoofRooms: 5,
+    //    //    PageCount: 1,
+    //    //    Budget: '',
+    //    //    RequestorId: '',
+    //    //    AdultCount: 2,
+    //    //    HotelCode:'PHCEB_00103'
+    //    //};
+    //};
+
+    //var loadTemplate = function (hotel) {
+    //    debugger;
+    //    var template = undefined;
+    //    $.get("room-breakup.tpl.html", function (my_var) {
+    //        debugger;
+    //        template = my_var;
+    //        if (hotel) {
+    //            $('.room-Breakup-content').html('');
+    //            $.each(hotel[0].RoomType, function (a, b, c) {
+    //                debugger;
+    //                //var row = "<tr>" +
+    //                //    "<td>" + b.RoomTypeName + " Room </td>" +
+    //                //       "<td>" + b.MealType + " Meal </td>" +
+    //                //    "<td>" + b.CurrencySymbol + " " + b.TotalRate + "</td>" +
+    //                //    "<td>" + b.CurrencySymbol + " " + b.TotalRate + "</td>" +
+    //                //    "<td>" + "" + "</td>" +
+    //                //    "<td>" + "" + "</td>" +
+    //                //    "</tr>";
+                    
+    //                var row = '<div class="rze-tabcontainer" id="Viewdetails_' + b.RoomTypeName + "3 adults"  +b.MealType + "Avg.per Night" + "Total " + hotel[0].TotalRate +'"> ' +                                    
+    //                               '</div> '
+    //                var html = $("#RoomTypes").append(row)
+    //                $('#room-tab_'+hotel[0].HotelCode).append(html);
+    //            });
+    //        }
+    //    }, 'html');
+
+    //};
+
+    //var onRoomSelect = function () {
+    //    debugger;
+    //    var any = hotelRooms;
+    //}
+
+    $(function () {
+        //Initialize()
+    });
+</script>

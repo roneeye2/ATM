@@ -1,0 +1,72 @@
+<script src="Media/Vendor/bootstrap/bootbox.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,500i,700,700i,900,900i" rel="stylesheet">
+<div class="rzbe-headerwrap" id="b2eHeader">
+    <nav class="navbar navbar-default">
+        <div class="rzb2enav-cont">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" tabindex="1">
+                    <span><img src="" id="tenantLogo" data-pin-nopin="true"></span>
+                <!--<img src="media/Images/header-logo.png" alt="Logo" data-pin-nopin="true">--></a>
+                <div class="visible-xs text-right xs-links">
+                    <a id="lnkLogout" href="#" title="Logout"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                    <a id="myProfile_headerSD" href="/EmployeeProfile.html" title="My Profile" style="display:none"><img class="rze-profimg" src="media/Images/user.png" id="userImageSD" alt="User Image"></a>
+                    <a id="tmcProfile_headerSD"  href="/TMCProfile.html" title="My Profile" style="display:none"><img class="rze-profimg" src="media/Images/user.png" id="userImageSD" alt="User Image"></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse pull-left" id="myNavbar">
+                <ul id="fixedDashboardItem" class="nav navbar-nav">
+                    <li id="header_Dashboard" class="active">
+                        <a href="/Dashboard.html" tabindex="1">
+                            <span class="rze-dashboard">&nbsp;</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li id="header_TravelRequest">
+                        <a href="/TravelRequest.html" tabindex="1">
+                            <span class="rze-requests">&nbsp;</span>
+                            Requests
+                        </a>
+                    </li>
+                    <li id="header_TravelFareFinder">
+                        <a href="/TravelFareFinder.html" tabindex="1">
+                            <span class="rze-travel">&nbsp;</span>
+                            Travel
+                        </a>
+                    </li>
+                    <li id="ExpenseReports_header">
+                        <a href="/ExpenseReports.html" tabindex="1">
+                            <span class="rze-expenses">&nbsp;</span>
+                            Expenses
+                        </a>
+                    </li>
+                </ul>               
+            </div>            
+                <div class="slider">
+                    <a class="buttons prev hide" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <div class="viewport">
+                        <ul class="overview nav nav-pills rze-treq" id="myTab"></ul>
+                    </div>
+                    <a class="buttons next hide" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right rzb2e-rightnav hidden-xs">
+                    <!--<li class="rze-contact"></li>-->
+                    <li class="rzb2e-profile">
+                        <span><img class="rze-profimg" src="media/Images/user.png" id="userImageBD" data-pin-nopin="true"></span>
+                        <label><span>Hello</span> <span class="rze-loginname"></span></label>
+                        <ul>
+                            <li><a id="lnkLogout" href="#" tabindex="1">Logout</a></li>
+                            <li>|</li>
+                            <li id="myProfile_headerBD" style="display:none"><a href="/EmployeeProfile.html" tabindex="1">My Profile</a></li>
+                            <li id="tmcProfile_headerBD" style="display:none"><a href="/TMCProfile.html" tabindex="1">My Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>                       
+        </div>        
+    </nav>    
+</div>

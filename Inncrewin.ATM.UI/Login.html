@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    
+    <title>Dwidaya :: Corporate Booking test</title>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="media/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="media/vendor/jquery/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Bundles/MasterJS.js"></script>
+    <script language="javascript" type="text/javascript" src="Bundles/LoginJS.js"></script>
+    <link rel="stylesheet" href="Bundles/MasterCSS.css">
+    <script src="media/js/Login.js"></script>
+
+    <!--<script src="media/vendor/jquery/jquery.min.js"></script>
+    <script src="http://malsup.github.io/jquery.blockUI.js"></script>
+    <link rel="stylesheet" href="http://malsup.com/jquery/block/block.css">
+    <link rel="stylesheet" href="media/travel-vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media/travel-vendor/bootstrap/css/bootstrap-theme.min.css">
+    <script src="media/travel-vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="media/vendor/jquery/jquery.validate.min.js"></script>
+    <script src="media/vendor/jquery/jquery.validate.unobtrusive.min.js"></script>
+    <script src="Media/Vendor/jquery/moment.min.js"></script>
+    <script src="media/js/serviceproxy.js"></script>
+    <script src="media/js/PostifyData.js"></script>
+    <script src="media/js/Login.js"></script>
+    <link rel="stylesheet" href="media/css/styles-new.css">
+    <link rel="stylesheet" href="media/css/responsive-fluid.css">
+    <script src="media/js/common.js"></script>
+    <link rel="stylesheet" href="media/css/Sonata-theme.css">-->
+    <script>    
+    $(document).ready(function(){
+        $('.rze-logindet .form-control').on('focus blur', function (e) {
+            $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+        }).trigger('blur');
+    });
+    </script>
+
+
+
+</head>
+<body>
+    <div class="rzb2e-wrapper ">
+        <div class="container">
+            <header>
+                <div class="rzbe-headerwrap">
+                    <nav class="navbar navbar-default">
+                        <div class="rzb2enav-cont">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="http://www.sonata-software.com/"><img src="media/images/sonata-logo.png" data-pin-nopin="true"></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="rzb2e-content rzb2e-loginwrap">
+                <div class=" rze-logincont">
+                    <div class="rze-loginhead">
+                        <div>Login</div>
+                    </div>
+                    <div class="rze-logindet col-md-12">
+                        <div class="col-md-12">
+                            <div id="lblValidateMsg"></div>
+                        </div>
+                        <div class="form-group col-md-12" id="divTenantCode">
+                            <label class="control-label">Client Code <span class="required">*</span></label>
+                            <input type="text" id="txtTenantCode" name="TenantCode" class="form-control" autocomplete="new-password" />
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label">Username / Email <span class="required">*</span></label>
+                            <input type="text" id="txtUsername" name="Username" class="form-control" autocomplete="new-password" />
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label">Password <span class="required">*</span></label>
+                            <input type="password" id="txtPassword" name="Password" class="form-control" autocomplete="off" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <a class="btn" id="lnkLogIn" onclick="return ValidateUser()">Login</a>
+                        </div>
+                        <div class="rze-loginlinks">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <label class="checkbox-inline"><input id="chkboxRememberMe" type="checkbox" value="Remember_Me">Remember Me</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 text-right rza-passwordmsg">
+                                <label>Forgot Password <a href="#" class="pull-right" data-toggle="tooltip" data-placement="top" title="Kindly get in touch with Administrator to reset password."><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                            </div>
+                            <!--<div class="col-md-6 text-right"><a>Forgot Password?</a></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer"></footer>
+        </div>
+    </div>
+</body>
+</html>

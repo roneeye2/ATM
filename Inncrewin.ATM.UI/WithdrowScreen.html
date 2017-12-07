@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input /><button onclick="onClick();">Withdrow</button>
+
+    <table id="notes">
+       
+    </table>
+</body>
+</html>
+
+<script src="Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+    });
+
+    function onClick()
+    {
+        Distribute($('input').val());
+    }
+
+    function Distribute(amount)
+    {
+        $.ajax({
+            url: "http://localhost:4999/api/Withdrow/"+amount,
+            //data: data,
+            type: "GET",
+            timeout: 600000,
+            success: function (a, b, c) {
+                
+            },
+            error: function (a, b, c) { }
+        }).then(function (data, status, xhr) {
+            var total = 0;
+            $('#notes').html("");
+            $.each(data, function (index, item) {
+                total += item.Key.Amount * item.Value
+                $('#notes').append(" <tr>            <td>" + item.Key.Amount + "</td>            <td>" + item.Value + "</td>       <td>" + item.Key.Amount * item.Value + "</td>  </tr>");
+            });
+            $('#notes').append(" <tr>            <td></td>            <td></td>       <td>" + total + "</td>  </tr>");
+        });
+    }
+</script>

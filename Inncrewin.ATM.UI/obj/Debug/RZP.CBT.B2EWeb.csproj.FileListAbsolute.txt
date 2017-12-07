@@ -1,0 +1,9 @@
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\RZP.CBT.B2EWeb.csprojResolveAssemblyReference.cache
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\RZP.CBT.B2EWeb.dll.config
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\RZP.CBT.B2EWeb.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\RZP.CBT.B2EWeb.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\System.Web.Optimization.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\WebGrease.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Newtonsoft.Json.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\RZP.CBT.B2EWeb.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\RZP.CBT.B2EWeb.pdb

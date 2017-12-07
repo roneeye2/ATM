@@ -1,0 +1,20 @@
+﻿.navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav>li>a:focus, footer { background: #0b0b0b; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active:hover > a { background: #ba0c0d; }
+.rze-subhead .nav, .srch-req, .rze-subhead .nav, .rzb2enav-cont .nav .active a, .rzb2enav-cont .nav .active a:hover { background: #ba0c0d; }
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .rze-bg, .rze-dash-tabhead { background: #7f7f7f; }
+.count-header, .rze-uploadvouch h4 { background: #333333; }
+.btn.btn-primary,
+.rze-logindet a.btn { background: url("../images/btn-tail.gif") center top repeat-x #a60808; }
+.btn.btn-primary:hover { background: #013646; }
+.row_main .btn-info, .btn-info:active:hover, .btn-info:active:focus { border: 1px solid #333333; color: #333333; }
+.rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills { background: #7f7f7f; }
+.rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills > li { background: #7f7f7f; border: 1px solid #0b0b0b; }
+.rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills > li.active { background: #ba0c0d; border: 1px solid #ba0c0d; }
+.rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills > li.active > a { background: transparent; }
+.rze-chkpaxcont .panel-default > .panel-heading > .panel-title > a { color: #0b0b0b; }
+.rze-treq.nav-pills > li > a:hover, .rze-treq.nav-pills > li > a:focus { background-color: #333333; color: #fff; }
+.rze-sortico .fa.active { color: #ba0c0d; }
+.blockUI h1 { color: #ffffff; }
+.rze-logindet .form-control:focus { border-bottom: 2px solid #ccc; }
+.nav-pills > li#MyAssociates.active > a, .nav-pills > li#MyAssociates.active > a:focus, .nav-pills > li#MyAssociates.active > a:hover, #ApproverSection .rze-bg, #ApproverSection .rze-dash-tabhead { background: #793a3a; }
+.panel .panel-heading { background: #333333; }

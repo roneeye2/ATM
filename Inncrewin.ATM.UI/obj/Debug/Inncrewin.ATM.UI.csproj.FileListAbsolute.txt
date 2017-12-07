@@ -1,0 +1,18 @@
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Inncrewin.ATM.UI.dll.config
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Inncrewin.ATM.UI.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Inncrewin.ATM.UI.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\System.Web.Optimization.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\WebGrease.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Newtonsoft.Json.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\Inncrewin.ATM.UI.dll
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\Inncrewin.ATM.UI.pdb
+D:\Rohit\R&D\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\Inncrewin.ATM.UI.csprojResolveAssemblyReference.cache
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Inncrewin.ATM.UI.dll.config
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Inncrewin.ATM.UI.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Inncrewin.ATM.UI.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\System.Web.Optimization.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\WebGrease.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\bin\Newtonsoft.Json.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\Inncrewin.ATM.UI.csprojResolveAssemblyReference.cache
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\Inncrewin.ATM.UI.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\RZP.CBT.B2EWeb\obj\Debug\Inncrewin.ATM.UI.pdb

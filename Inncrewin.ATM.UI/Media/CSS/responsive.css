@@ -1,0 +1,147 @@
+﻿
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .rze-ffcont { margin: 0px 10px auto; }
+    .rze-trip:first-child { padding: 0px 15px; }
+    .rze-trip:last-child { padding: 0px 15px; }
+    .rze-ffcont { margin: 0 30px auto; }
+    .rze-trip:first-child > div:after { display: none; }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    /*Login*/
+
+
+
+    .rzb2e-loginwrap { padding: 100px 15px; }
+    .rze-logincont { width: 100%; }
+
+    /*header*/
+    header { position: relative; }
+    .navbar-collapse { width: 100%; }
+    .navbar-brand > img { padding-top: 5px; width: 160px; }
+    .slider { margin: 0 auto; width: 100%; }
+    .navbar-header { box-shadow: 1px 1px 3px 3px #E6E6E6; }
+    .rze-treq.nav-pills > li > a { padding: 5px; font-size: 13px; font-weight: bold; }
+    .rze-treq.nav-pills > li > a > small { width: 70px; }
+    .rze-treq.nav-pills > li > a > i.close-btn { height: 10px; width: 10px; }
+    .rze-treq { left: 50%; position: relative; margin-left: -121px; }
+
+    /*Menu*/
+    .rzb2enav-cont .navbar-nav { margin: 0px -15px; }
+    .rzb2enav-cont .navbar-nav > li > a { min-height: 0px; padding: 15px 10px; text-align: center; }
+    .rzb2enav-cont .navbar-nav > li > a > span { display: none; }
+    .navbar-toggle { float: left; margin: 12px 0px; border: 0px; padding: 9px 5px 9px 10px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: transparent; }
+    .navbar-default .navbar-toggle .icon-bar { background-color: #f9992b; width: 20px; height: 3px; }
+    .xs-links a { margin: 6px 0; display: inline-block; padding: 10px 8px; color: #6f6f6f; font-size: 20px; }
+    .xs-links a:last-child { margin-right: 10px; }
+    .rze-dash-tabhead span.rze-tabtitle { padding: 4px 10px; }
+
+    /*Sub-Menu*/
+    .rze-subhead .nav-pills > li > a { margin-top: 10px; padding: 7px 7px 9px; font-size: 13px; font-weight: bold; }
+    .subhead-title { padding: 4px 5px; margin-top: 2px; font-size: 24px; }
+    .subhead-title > div { padding-left: 23px; }
+    .subhead-title > div.rze-subdash { background-position: -45px 12px; }
+    .subhead-title > div.rze-subreq { background-position: 5px 8px; }
+    .rze-subhead .nav-pills > li.rze-createreq > a, .rze-subhead .nav-pills > li.rze-createreq:hover > a { background: url(../images/new-req.png) no-repeat 12px 0px; padding: 14px 20px; }
+    .subhead-title > div.rze-subtravel { background-position: -40px -274px; padding-left: 38px; }
+    /*Dashboard*/
+    .rze-dash-tabhead { font-size: 14px; }
+    .rze-dashcalendar { padding: 10px 0; }
+    .rze-dashcalendar span { padding: 5px; font-size: 13px; }
+    .rze-dashcalendar a { padding: 0 6px 4px; }
+    .rze-dash-count .count-det a { padding: 5px 7px 2px; border-radius: 15px 15px 0px 0px; font-size: 11px; }
+    .srch-req { padding: 10px; }
+    .srch-req a { padding: 0px 5px; font-size: 20px; }
+    .count-cont { padding: 0px; }
+    .rze-dash-count .count-det { margin-bottom: -1px; }
+    .rze-dash-count > div > span { width: 58px; }
+    .rze-count small { font-size: 13px; }
+    .count-header { padding: 5px; }
+    .rze-bg h4 { margin-top: 15px; }
+    .table-overlay .table-responsive { overflow: auto; }
+    .rze-tablecont .table > tbody > tr > td { padding: 2px 5px; }
+
+    /*Requets*/
+    .rze-budget .form-inline .form-control { display: inline-block; }
+    .rze-budget > div { display: block; }
+    .rze-budget > div > .form-group { display: inline-block; margin-bottom: 15px; }
+
+    /*Travel*/
+    .rze-ftabs .rze-ffcont { margin: 15px; }
+
+    /*Footer*/
+    footer > div { text-align: center; }
+    footer img { width: auto; }
+    footer ul { display: block; margin-bottom: 10px; }
+    footer ul li { display: block; }
+    footer ul li a { padding: 3px 5px; display: block; }
+    .rze-copyright { text-align: center; }
+
+
+    body { font-size: 13px; }
+    ul.rez-ac-wrapper { list-style: none; margin: 0px; padding: 0 0 0 0px; z-index: 100; width: 243px; font-size: 12px; max-width: 290px; overflow: hidden; }
+    .footer img { width: 130px; }
+    footer ul li { display: inline-block; margin-bottom: 3px; }
+    footer ul li a { padding: 3px 5px; display: block; font-size: 11px; text-decoration: underline; }
+    .blockMsg { top: 50% !important; margin-top: -140px !important; left: 50% !important; margin-left: -95px !important; width: auto !important; }
+    .blockUI h1 { font-size: 25px; width: auto !important; display: inline-block; color: #f9af24; }
+    .blockUI h1 i { font-size: 50px; display: inline-block; clear: both; display: block; width: auto; margin-bottom: 7px; color: #fff; }
+    .farefinder .rze-ftabs { padding: 15px 0; }
+    /*Date Picker*/
+    html .ui-datepicker-multi-2.ui-datepicker-multi { background: #fff; width: 273px; max-width: 273px; z-index: 1000; }
+    .ui-datepicker-multi-2 .ui-datepicker-group { width: 100%; }
+    .ui-datepicker-multi .ui-datepicker-group table { width: 100%; margin: 0; }
+    .ui-datepicker-group { clear: both; float: none; }
+    .form-control { padding: 6px 3px 6px 5px; font-size: 13px; }
+    .farefinder .rze-ftabs .rze-hoteltitle .tab-content .form-group { margin-bottom: 15px; }
+    .rze-ffcont { margin: 0 15px; }
+    .rze-prdimg { padding: 0px; width: 100%; text-align: center; }
+    .rze-prdcontwrap #theImg { float: none; }
+    .rze-prdcontwrap { text-align: center; }
+    .rze-prdnavcont { position: relative; right: 0; bottom: 0; padding: 0px; }
+    .rze-prdnav span { display: none; }
+    .rze-prdcontwrap .rze-pricingcont .rze-priceval { float: none; }
+    .rze-pricingcont .rze-price { margin: 10px 0; }
+    .rze-prdcont h3 { font-size: 20px; }
+    .rze-prdtittle { margin-top: 11px; font-size: 20px; }
+    #rze-prdnav a { font-size: 11px; padding-right: 5px; text-decoration: underline; }
+    .rze-trip:first-child { padding: 0px 15px; }
+    .rze-trip:last-child { padding: 0px; }
+    .rze-fltdetls > div.rza-fimg span { width: auto; }
+    .rze-trip:first-child > div:after { display: none; }
+    #divMain.rze-flightContainer { padding: 0px 2px 10px 2px; }
+    .rze-fdets > i { padding: 0px 3px; }
+    .rze-fdets, .rze-fdettime, .rze-fdettime { font-weight: bold; font-size: 11px; }
+    .rze-fdetdate { font-weight: normal; font-size: 11px; }
+    .rze-time { font-size: 13px; margin: 0px; background: #ccc; padding: 7px 10px; }
+    .rze-ftimes { font-size: 11px; }
+    #Flightfilters { padding: 2px; }
+    .rze-flightheader { background: #f9992b; color: #fff; }
+    .airline-title, .rze-rightelet { color: #ffffff; }
+    .xs-nopadding { padding: 0px; }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .rze-dash-count > div > span { display: block; text-align: center; float: none !important; width: 100%; }
+    .rze-dash-count > div > span:first-child { display: none; }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+
+
+/*@media (max-width:400px) {
+    .rze-dash-tabhead { font-size: 14px; }
+    .rze-dash-tabhead span.rze-tabtitle { padding: 8px 10px; }
+    .srch-req { padding: 14px 8px; }
+    .navbar-toggle { padding: 9px 5px 9px 10px; }
+    .xs-links a { margin: 6px 0; padding: 10px 5px; font-size: 18px; }
+    .navbar-brand { padding: 12px 0; }
+}*/

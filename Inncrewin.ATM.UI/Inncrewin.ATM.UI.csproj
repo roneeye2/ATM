@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CFADDB3-A556-4585-9998-F3986A665759}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inncrewin.ATM.UI</RootNamespace>
+    <AssemblyName>Inncrewin.ATM.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependency\External\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependency\External\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\ApplicationSettingsHelper.cs" />
+    <Compile Include="App_Code\BundlingClasses.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Error.html" />
+    <Content Include="Global.asax" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\progressbar.gif" />
+    <Content Include="Media\CSS\blueimp-gallery.css" />
+    <Content Include="Media\CSS\jquery.fileupload-ui.css" />
+    <Content Include="Media\CSS\jquery.fileupload.css" />
+    <Content Include="Media\CSS\responsive-fluid.css" />
+    <Content Include="Media\JS\Expense\Expense-common.js" />
+    <Content Include="Media\JS\Expense\ExpenseOperations.js" />
+    <Content Include="Media\JS\Expense\ExpenseReport.js" />
+    <Content Include="Media\JS\Expense\ExpenseReportDashBoard.js" />
+    <Content Include="Media\JS\Expense\ExpenseReportDetail.js" />
+    <Content Include="Media\JS\fileuploadExp\blueimp-gallery.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.fileupload-ui.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.fileupload-validate.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.fileupload.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.iframe-transport.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.knob.js" />
+    <Content Include="Media\JS\fileuploadExp\jquery.ui.widget.js" />
+    <Content Include="Media\JS\fileuploadExp\load-image.all.min.js" />
+    <Content Include="Media\JS\fileuploadExp\main.js" />
+    <Content Include="Media\JS\fileupload\blueimp-gallery.js" />
+    <Content Include="Media\JS\fileupload\jquery.fileupload.js" />
+    <Content Include="Media\JS\fileupload\load-image.all.min.js" />
+    <Content Include="Media\JS\fileupload\main.js" />
+    <Content Include="Media\CSS\block.css" />
+    <Content Include="Media\CSS\bootstrap-slider.min.css" />
+    <Content Include="Media\CSS\font-awesome.min.css" />
+    <Content Include="Media\CSS\styles-new.css" />
+    <Content Include="Media\CSS\styles.css" />
+    <Content Include="Dashboard.html" />
+    <Content Include="footer.html" />
+    <Content Include="header.html" />
+    <Content Include="Media\FileBundling.xml" />
+    <Content Include="Media\Images\arrow.png" />
+    <Content Include="Media\Images\contact.png" />
+    <Content Include="Media\Images\dashboard.png" />
+    <Content Include="Media\Images\dwidaya_icons.png" />
+    <Content Include="Media\Images\footer-logo.png" />
+    <Content Include="Media\Images\header-logo.png" />
+    <Content Include="Media\Images\icon_menu.png" />
+    <Content Include="Media\Images\login-bg.jpg" />
+    <Content Include="Media\Images\login-bg.png" />
+    <Content Include="Media\Images\logo.png" />
+    <Content Include="Media\Images\no-image.png" />
+    <Content Include="Media\Images\no-user-image.jpg" />
+    <Content Include="Media\Images\phone.png" />
+    <Content Include="Media\Images\profile.png" />
+    <Content Include="Media\Images\requests.png" />
+    <Content Include="Media\Images\rzf-topbar.png" />
+    <Content Include="Media\Images\travel.png" />
+    <Content Include="Media\Images\user.png" />
+    <Content Include="Media\JS\blockUI.js" />
+    <Content Include="Media\JS\bootstrap-slider.min.js" />
+    <Content Include="Media\JS\ChangePassword.js" />
+    <Content Include="Media\JS\common.js" />
+    <Content Include="Media\JS\Employee\Employee.js" />
+    <Content Include="Media\JS\Flight\FlightFareFinder.js" />
+    <Content Include="Media\JS\Flight\FlightSearch.js" />
+    <Content Include="Media\JS\Global.js" />
+    <Content Include="Media\JS\HotelResults.js" />
+    <Content Include="Media\JS\Hotel\Hotel.js" />
+    <Content Include="Media\JS\Hotel\hotelfarefinder.js" />
+    <Content Include="Media\JS\Hotel\HotelSearch.js" />
+    <Content Include="Media\JS\jquery-ui.min.js" />
+    <Content Include="Media\JS\jquery.blockUI.js" />
+    <Content Include="Media\JS\jquery.min.js" />
+    <Content Include="Media\JS\jquery.validate.min.js" />
+    <Content Include="Media\JS\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Media\JS\Login.js" />
+    <Content Include="Media\JS\PostifyData.js" />
+    <Content Include="Media\JS\serviceproxy.js" />
+    <Content Include="Media\JS\TMCProfile\TMCProfile.js" />
+    <Content Include="Media\JS\TravelItinerary\AddToItinerary.js" />
+    <Content Include="Media\JS\TravelItinerary\TravelFareFinder.js" />
+    <Content Include="Media\JS\TravelRequest\travel-common.js" />
+    <Content Include="Media\JS\TravelRequest\TravelRequest.js" />
+    <Content Include="Media\JS\TravelRequest\TravelRequestDashboard.js" />
+    <Content Include="Media\JS\TravelRequest\TravelRequestDetail.js" />
+    <Content Include="Media\Travel-vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Media\Travel-vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Media\Travel-vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Media\Travel-vendor\bootstrap\js\npm.js" />
+    <Content Include="Media\Travel-vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Media\Travel-vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Media\Travel-vendor\jquery-ui\css\jquery-ui.css" />
+    <Content Include="Media\Travel-vendor\jquery-ui\js\jquery-ui.min.js" />
+    <Content Include="Media\Travel-vendor\jquery\jquery.min.js" />
+    <Content Include="Media\Travel-vendor\slider\jquery.tinycarousel.js" />
+    <Content Include="Media\Travel-vendor\slider\tinycarousel.css" />
+    <Content Include="Media\Vendor\bootstrap\bootbox.js" />
+    <Content Include="Media\Vendor\jquery\jquery-ui-i18n.js" />
+    <Content Include="Media\Vendor\jquery\jquery.maskedinput.min.js" />
+    <Content Include="Media\Vendor\jquery\moment.min.js" />
+    <Content Include="Login.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="WithdrowScreen.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media\Vendor\bootstrap\bootstrap-theme.css" />
+    <Content Include="Media\Vendor\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="Media\Vendor\bootstrap\bootstrap.css" />
+    <Content Include="Media\Vendor\bootstrap\bootstrap.js" />
+    <Content Include="Media\Vendor\bootstrap\bootstrap.min.css" />
+    <Content Include="Media\Vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="Media\Vendor\font-awesome\font-awesome.min.css" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_222222_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_444444_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_555555_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_777620_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_777777_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\jquery-ui.css" />
+    <Content Include="Media\Vendor\jquery-v1.11.3\jquery-ui.min.js" />
+    <Content Include="Media\Vendor\jquery\jquery-ui.css" />
+    <Content Include="Media\Vendor\jquery\jquery-ui.js" />
+    <Content Include="Media\Vendor\jquery\jquery.min.js" />
+    <Content Include="Media\Vendor\jquery\jquery.validate.min.js" />
+    <Content Include="Media\Vendor\jquery\jquery.validate.unobtrusive.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media\Travel-vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Media\Travel-vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Media\Travel-vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Media\Travel-vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Media\Travel-vendor\font-awesome\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64205</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64205/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:64205/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

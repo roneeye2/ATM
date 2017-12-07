@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dwidaya :: Corporate Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Bundles/MasterJS.js"></script>
+    <script language="javascript" type="text/javascript" src="Bundles/DashboardJS.js"></script>
+    <link rel="stylesheet" href="Bundles/MasterCSS.css">
+   
+   
+    <!--<link rel="stylesheet" href="media/vendor/jquery-v1.11.3/jquery-ui.css">
+    <link rel="shortcut icon" href="media/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="media/travel-vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media/travel-vendor/bootstrap/css/bootstrap-theme.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://malsup.github.io/jquery.blockUI.js"></script>
+    <script src="media/travel-vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="media/vendor/jquery-v1.11.3/jquery-ui.min.js"></script>
+    <script src="media/js/serviceproxy.js"></script>
+    <script src="media/js/PostifyData.js"></script>
+    <script src="media/js/TravelRequest/TravelRequestDashboard.js"></script>
+    <script src="media/js/TravelRequest/travel-common.js"></script>
+    <link rel="stylesheet" href="media/travel-vendor/slider/tinycarousel.css">
+    <script src="media/travel-vendor/slider/jquery.tinycarousel.js"></script>
+    <link rel="stylesheet" href="media/css/styles-new.css">
+    <link rel="stylesheet" href="media/css/responsive-fluid.css">
+    <script src="media/js/common.js"></script>
+    <script src="Media/Vendor/jquery/jquery.maskedinput.min.js"></script>
+    <script src="Media/Vendor/jquery/jquery-ui-i18n.js"></script>
+    <script src="Media/Vendor/jquery/moment.min.js"></script>-->
+
+</head>
+<body>
+    <div class="rzb2e-wrapper">
+        <div class="container">
+            <header id="header_Dashboard"></header>
+            <div class="rzb2e-content">
+                <div class="rze-subhead">
+                    <div id="ApproverTab">
+                        <ul class="nav nav-pills">
+                            <!--<li class="subhead-title hidden-xs"><div class="rze-subdash">Dashboard</div></li>-->
+                            <!--<li class="subhead-title visible-xs"><div class="rze-subdash">&nbsp;</div></li>-->
+                            <li id="MySelf" class="active"><a data-toggle="pill" href="#SelfSection" tabindex="1">Myself</a></li>
+                            <li id="MyAssociates"><a data-toggle="pill" href="#ApproverSection" tabindex="1">My Approvals</a></li>
+                            <li id="CreateRequest" class="rze-createreq"><a data-toggle="pill" href="#" tabindex="1" onclick="CreateRequest();">Create Request</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" id="IsAdmin" name="IsAdmin" value="" />
+                    <input type="hidden" id="SkipCount" name="SkipCount" value="0" />
+                    <input type="hidden" id="DefaultTakeCount" name="DefaultTakeCount" value="10" />
+                    <input type="hidden" id="hdnShowCount" value="0" />
+                    <input type="hidden" id="hdnTotalResultsCount" value="0" />
+                    <input type="hidden" id="hdnIsScroll" value="false" />
+                    <input type="hidden" id="hdnConstantTotalResults" value="0" />
+                    <input type="hidden" id="hdnIsFilterApplied" value=false />
+                    <input type="hidden" id="hdnFilterRequestType" value="" />
+                    <input type="hidden" id="hdnStatusFilterOnCount" value="0" />
+                    <input type="hidden" id="hdnCalledByAdminDashboard" value=false />
+                    <div class="rze-tabcont">
+                        <div id="ApproverSection" class="tab-pane fade">
+                            <div class="rze-bg">
+
+                                <div>
+                                    <div class="col-md-6">
+                                        <div class="count-header text-center">Travel Request Reviews</div>
+                                        <div class="count-cont">
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-pending">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRPending"></label><small><a id="TRPending_Anchor" href="#" tabindex="1" onclick="ApprTravelRequestViewItem('Travel Request Submitted');">Pending</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a onclick="ApprTravelRequestViewItem('Travel Request Review');">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-approved">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRApproved"></label><small><a id="TRApproved_Anchor" href="#" tabindex="1" onclick="ApprTravelRequestViewItem('Travel Request Approved');">Approved</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-rejected">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRRejected"></label><small><a id="TRRejected_Anchor" href="#" tabindex="1" onclick="ApprTravelRequestViewItem('Travel Request Rejected');">Rejected</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="count-header text-center">Itinerary Reviews</div>
+                                        <div class="count-cont">
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-pending">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="IRPending"></label><small><a id="IRPending_Anchor" href="#" tabindex="1" onclick="ApprTravelRequestViewItem('itinerary Review');">Pending</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a onclick="ApprTravelRequestViewItem('Travel itinerary Review');">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-approved">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="IRApproved"></label><small><a id="IRApproved_Anchor" href="#" tabindex="1" onclick="ApprTravelRequestViewItem('itinerary Approved');">Approved</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-rejected">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="IRRejected"></label><small><a id="IRRejected_Anchor" href="#" tabindex="1" onclick="ApprTravelRequestViewItem('itinerary Rejected');">Rejected</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="rze-selfsection">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="rze-dash-tabhead">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <span class="rze-tabtitle">Summary for 3 Months</span>
+                                                <input type="hidden" id="hdnUserId" name="hdnUserId" value="" />
+                                                <input type="hidden" id="hdncorporateId" name="hdncorporateId" value="" />
+                                                <input type="hidden" id="OrginalGrid" name="OrginalGrid" value="" />
+                                                <input type="hidden" id="hdnSelectCalenderYear" name="hdnSelectCalenderYear" value="" />
+                                                <div id="mainCalender">
+                                                    <div id="calender" class="text-center rze-dashcalendar">
+                                                        <a id="calenderBackward" onclick="calenderBackward('');" href="#" tabindex="1"><i class=" fa fa-angle-left" aria-hidden="true"></i></a>
+                                                        <span id="firstMonth"></span>
+                                                        <span id="secondMonth"></span>
+                                                        <span id="thirdMonth" class="rze-curmonth"></span>
+                                                        <a id="calenderForward" onclick="calenderForward('');" href="#" tabindex="1"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12 text-right rze-tab-btn">
+                                                <div class="srch-req">
+                                                    <a id="rze-search" onclick="SearchToggle('Associates')" class="hidden-xs hidden-sm"> <i class="fa fa-search"></i> Search Requests</a>
+                                                    <a id="rze-search" onclick="SearchToggle('Associates')" class="visible-xs visible-sm"><i class="fa fa-search"></i> Search </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="rze-wrapAssociates" class="rze-wrap">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label>Trip Name</label>
+                                                    <input id="TripName" name="TripName" type="text" value="" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label>Traveller Name</label>
+                                                    <input id="TravellerName" name="TravellerName" type="text" value="" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Traveller Destination </label>
+                                                    <input id="TravellerDestination" name="TravellerDestination" type="text" value="" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Travelled From </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestStartDate" name="RequestStartDate" tabindex="0">
+                                                        <div class="input-group-btn">
+                                                            <label for="RequestStartDate" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Travelled To </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestEndDate" name="RequestEndDate" tabindex="0">
+                                                        <div id="RequestEndDateLbl" class="input-group-btn">
+                                                            <label for="RequestEndDate" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Request No. </label>
+                                                    <input id="RequestNo" name="RequestNo" type="number" value="" class="form-control no-spinners" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Requested Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestedDate" name="RequestedDate" tabindex="0">
+                                                        <div class="input-group-btn">
+                                                            <label for="RequestedDate" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="ApprRequestStatusDiv" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Request Status </label>
+                                                    <select id="RequestStatus" class="form-control" tabindex="1"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group text-center">
+                                                    <a href="#" tabindex="1" onclick="FilterRequest('Associates',true);" class="btn btn-primary">Show Results <i class="fa fa-arrow-circle-right"></i></a>
+                                                    <a href="#" tabindex="1" onclick="ResetRequest();" class="btn btn-primary">Reset</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="rze-tablecont table-overlay col-xs-12">
+                                    <div class="table-responsive">
+                                        <div id="rze-overlayAssociates"></div>
+                                        <table id="ApproverGrid" class="table">
+                                            <thead id="ApproverGridheadings">
+                                                <tr>
+                                                    <th id="RequestBy" tabindex="1">Request By <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestDate" tabindex="1">Requested Date <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down active" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestNo" tabindex="1" data-breakpoints="xxs xs sm">Request ID <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TripName" tabindex="1" data-breakpoints="xxs xs sm">Trip Name <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TravelDestination" tabindex="1" data-breakpoints="xxs xs sm">Destination <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TravelStartDate" tabindex="1" data-breakpoints="xxs xs sm">Travel Start Date <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestStatus" tabindex="1" data-breakpoints="xxs">Status <!--<label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label> <a tabindex="1" style="display:none" href="#" rel="popover" data-placement="bottom" data-popover-content="#rze-status"><i id="filter" class="fa fa-filter" aria-hidden="true"></i></a>--></th>
+                                                    <th id="Action" tabindex="1" data-breakpoints="xxs xs">My Actions <!--<label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label>--></th>
+                                                    <th class="rze-tabhead-mob hidden-md hidden-lg" data-breakpoints="xxs xs sm">&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="ApproverTravelRequestGrid"></tbody>
+                                        </table>
+                                        <div id="dashboardMyApprovalsTabResultCount" class="rze-reslist">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Pop-over-->
+                                <div id="rze-status" class="hide">
+                                    <div class="rze-statustitle">
+                                        <div>
+                                            <label class="checkbox-inline"><input id="showingAllFilter" onclick="ResetStatusFilter('All');" type="checkbox">Showing All</label>
+                                            <a tabindex="1" href="#" onclick="ResetStatusFilter('Clear');" class="pull-right">Clear</a>
+                                        </div>
+                                    </div>
+                                    <div id="StatusFilter" class="rze-statuscont">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="SelfSection" class="tab-pane fade in active">
+                            <div class="rze-bg">
+                                <div id="RequestorViewItemDiv">
+                                    <div class="col-md-4">
+                                        <div class="count-header text-center">New Requests</div>
+                                        <div class="count-cont">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-saved">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRSaved_Self"></label><small><a href="#" tabindex="1" id="TRSaved_Self_Anchor" onclick="SelfTravelRequestViewItem('Travel Request Draft');">Saved</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a onclick="SelfTravelRequestViewItem('Travel Request Draft');">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-submitted">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRSubmitted_Self"></label><small><a href="#" tabindex="1" id="TRSubmitted_Self_Anchor" onclick="SelfTravelRequestViewItem('Travel Request submitted');">Submitted</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count-header text-center">Travel Request Reviews</div>
+                                        <div class="count-cont">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-approved">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRApproved_Self"></label><small><a href="#" tabindex="1" id="TRApproved_Self_Anchor" onclick="SelfTravelRequestViewItem('Travel Request approved');">Approved</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-rejected">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="TRRejected_Self"></label><small><a href="#" tabindex="1" id="TRRejected_Self_Anchor" onclick="SelfTravelRequestViewItem('Travel Request Rejected');">Rejected</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a onclick="SelfTravelRequestViewItem('Travel Request Rejected');">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count-header text-center">Itinerary Reviews</div>
+                                        <div class="count-cont">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-approved">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="IRApproved_Self"></label><small><a href="#" tabindex="1" id="IRApproved_Self_Anchor" onclick="SelfTravelRequestViewItem('itinerary approved');">Approved</a></small></span>
+                                                    </div>
+                                                    <!--<div class="count-det">
+                                                        <div><a class="hide-details">View Items</a></div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div id="ItrRejectedCntDiv" class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-rejected">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="IRRejected_Self"></label><small><a href="#" tabindex="1" id="IRRejected_Self_Anchor" onclick="SelfTravelRequestViewItem('itinerary rejected');">Rejected</a></small></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="ItrSubForApprovalDiv" class="hide">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-rejected">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="SubForApproval_Self"></label><small class="rz-sonapp"><a href="#" tabindex="1" id="SubForApproval_Self_Anchor" onclick="SelfTravelRequestViewItem('submit for approval');">Submit For<br /> Approval</a></small></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="rze-selfsection">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="rze-dash-tabhead">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <span class="rze-tabtitle">Summary for 3 Months</span>
+
+                                                <!--<h4 class="text-center">Summary for 3 Months</h4>-->
+                                                <div id="mainCalender">
+                                                    <div id="calender" class="text-center rze-dashcalendar">
+                                                        <a href="#" tabindex="1" id="calenderBackward_Self" onclick="calenderBackward('self');"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                                        <span id="firstMonth_Self"></span>
+                                                        <span id="secondMonth_Self"></span>
+                                                        <span id="thirdMonth_Self" class="rze-curmonth"></span>
+                                                        <a href="#" tabindex="1" id="calenderForward_Self" onclick="calenderForward('self');"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12 text-right rze-tab-btn">
+                                                <div class="srch-req">
+                                                    <a href="#" tabindex="1" class="rze-search hidden-xs hidden-sm" onclick="SearchToggle('Self')"> <i class="fa fa-search"></i> Search Requests</a>
+                                                    <a href="#" tabindex="1" class="rze-search visible-xs visible-sm" onclick="SearchToggle('Self')"> <i class="fa fa-search"></i> Search</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="rze-wrapSelf" class="rze-wrap">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label>Trip Name</label>
+                                                    <input id="TripName_Self" name="TripName_Self" type="text" value="" class="form-control" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label>Traveller Name</label>
+                                                    <input id="TravellerName_Self" name="TravellerName_Self" type="text" value="" class="form-control" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Traveller Destination </label>
+                                                    <input id="TravellerDestination_Self" name="TravellerDestination_Self" type="text" value="" class="form-control" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Travelled From </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestStartDate_Self" name="RequestStartDate_Self" tabindex="1">
+                                                        <div class="input-group-btn">
+                                                            <label for="RequestStartDate_Self" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Travelled To </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestEndDate_Self" name="RequestEndDate_Self" tabindex="1">
+                                                        <div id="RequestEndDate_SelfLbl" class="input-group-btn">
+                                                            <label for="RequestEndDate_Self" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Request No. </label>
+                                                    <input id="RequestNo_Self" name="RequestNo_Self" type="number" value="" class="form-control no-spinners" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Requested Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestedDate_Self" name="RequestedDate_Self" tabindex="1">
+                                                        <div class="input-group-btn">
+                                                            <label for="RequestedDate_Self" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="RequestorRequestStatusDiv" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Request Status </label>
+                                                    <select id="RequestStatus_Self" class="form-control" tabindex="1"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group text-center">
+                                                    <a href="#" tabindex="1" onclick="FilterRequest('self',true);" class="btn btn-primary">Show Results <i class="fa fa-arrow-circle-right"></i></a>
+                                                    <a href="#" tabindex="1" onclick="ResetRequest();" class="btn btn-primary">Reset</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rze-tablecont table-overlay col-xs-12">
+                                    <div class="table-responsive">
+                                        <div id="rze-overlaySelf"></div>
+                                        <table id="SelfRequestGrid" class="table">
+                                            <thead id="SelfRequestGridheadings">
+                                                <tr>
+                                                    <th id="RequestBy_Self" tabindex="1">Request By <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestDate_Self" tabindex="1">Requested Date <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down active" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestNo_Self" tabindex="1" data-breakpoints="xxs xs sm">Request ID <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TripName_Self" tabindex="1" data-breakpoints="xxs xs sm">Trip Name <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TravelDestination_Self" tabindex="1" data-breakpoints="xxs xs sm">Destination <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TravelStartDate_Self" tabindex="1" data-breakpoints="xxs xs sm">Travel Start Date <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestStatus_Self" data-breakpoints="xxs">Status <!--<label class="rze-sortico"></i></label><a tabindex="1" href="#" rel="Selfpopover" data-placement="bottom" data-popover-content="#rze-statusSelf"><i id="filter" class="fa fa-filter" aria-hidden="true"></i></a>--></th>
+                                                    <th id="Action_Self" tabindex="1" data-breakpoints="xxs xs">My Actions <!--<label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label>--></th>
+                                                    <th class="rze-tabhead-mob hidden-md hidden-lg" data-breakpoints="xxs xs sm">&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="SelfTravelRequestGrid"></tbody>
+
+                                        </table>
+                                        <div id="myselfTabResultCount" class="rze-reslist"></div>
+
+                                    </div>
+                                </div>
+
+                                <!--Pop-over-->
+                                <div id="rze-statusSelf" class="hide">
+                                    <div class="rze-statustitle">
+                                        <div>
+                                            <label class="checkbox-inline"><input id="showingAllFilterSelf" onclick="ResetStatusFilterSelf('All');" type="checkbox" tabindex="1">Showing All</label>
+                                            <a href="#" tabindex="1" onclick="ResetStatusFilterSelf('Clear');" class="pull-right" style="cursor:default">Clear</a>
+                                        </div>
+                                    </div>
+                                    <div id="StatusFilterSelf" class="rze-statuscont">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="AdminSection" class="tab-pane fade in active">
+                            <div class="rze-bg">
+                                <div id="AdminViewItemDiv" class="rze-admcont rze-admcbt">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="count-cont">
+                                            <div class="col-md-6" id="IRSubmittedCntDiv">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-itrsubmitted">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="IRSubmitted_Admin"></label><small><a href="#" tabindex="1" id="IRSubmitted_Anchor" onclick="AdminTravelRequestViewItem('Itinerary Submitted');">Itinerary<br />Submitted</a></small></span>
+                                                    </div>
+                                                    <div class="count-det">
+                                                        <div><a href="#" tabindex="1" class="hide-details">View Items</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hide" id="CreateItineraryCntDiv">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-itrsubmitted">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="CreateItinerary_Admin"></label><small><a href="#" tabindex="1" id="CreateItinerary_Anchor" onclick="AdminTravelRequestViewItem('Create Itinerary');">Create<br />Itinerary</a></small></span>
+                                                    </div>
+                                                    <div class="count-det">
+                                                        <div><a href="#" tabindex="1" class="hide-details">View Items</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="count-cont">
+                                            <div class="col-md-6" id="TicketedCntDiv">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-ticketed">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="Ticketed_Admin"></label><small class="son-cbtticketed"><a href="#" tabindex="1" id="Ticketed_Anchor" onclick="AdminTravelRequestViewItem('Ticketed');">Ticketed</a></small></span>
+                                                    </div>
+                                                    <div class="count-det">
+                                                        <div><a href="#" tabindex="1" class="hide-details">View Items</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hide" id="ItineraryCreatedCntDiv">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-bkngsubmitted">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="ItineraryCreated_Admin"></label><small><a href="#" tabindex="1" id="ItineraryCreated_Anchor" onclick="AdminTravelRequestViewItem('Itinerary Created');">Itinerary<br />Created</a></small></span>
+                                                    </div>
+                                                    <div class="count-det">
+                                                        <div><a href="#" tabindex="1" class="hide-details">View Items</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="count-cont">
+                                            <div class="col-md-6" id="BookingSubmittedCntDiv">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-bkngsubmitted">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="BookingSubmitted_Admin"></label><small><a href="#" tabindex="1" id="BookingSubmitted_Anchor" onclick="AdminTravelRequestViewItem('Booking Submitted');">Booking<br />Submitted</a></small></span>
+                                                    </div>
+                                                    <div class="count-det">
+                                                        <div><a href="#" tabindex="1" class="hide-details">View Items</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hide" id="ItineraryApprovedCntDiv">
+                                                <div class="rze-dash-count">
+                                                    <div>
+                                                        <span class="rze-itrsubmitted">&nbsp;</span>
+                                                        <span class="rze-count pull-right"><label id="ItineraryApproved_Admin"></label><small><a href="#" tabindex="1" id="ItineraryApproved_Anchor" onclick="AdminTravelRequestViewItem('Itinerary Approved');">Itinerary<br />Approved</a></small></span>
+                                                    </div>
+                                                    <div class="count-det">
+                                                        <div><a href="#" tabindex="1" class="hide-details">View Items</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rze-selfsection">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="rze-dash-tabhead">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-6 col-xs-12">
+                                                <span class="rze-tabtitle">Summary for 3 Months</span>
+                                                <div id="mainCalender">
+                                                    <div id="calender" class="text-center rze-dashcalendar">
+                                                        <a href="#" tabindex="1" id="calenderBackward_Admin" onclick="calenderBackward('Admin');"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                                        <span id="firstMonth_Admin"></span>
+                                                        <span id="secondMonth_Admin"></span>
+                                                        <span id="thirdMonth_Admin" class="rze-curmonth"></span>
+                                                        <a href="#" tabindex="1" id="calenderForward_Admin" onclick="calenderForward('Admin');"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-6 text-right">
+                                                <div class="srch-req">
+                                                    <a href="#" tabindex="1" class="rze-search" onclick="SearchToggle('Admin')"> <i class="fa fa-search"></i> Search Requests</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="rze-wrapAdmin" class="rze-wrap">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label>Company</label>
+                                                    <input id="Company_Admin" name="Company_Admin" type="text" value="" class="form-control" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Traveller Destination </label>
+                                                    <input id="TravellerDestination_Admin" name="TravellerDestination_Admin" type="text" value="" class="form-control" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Travel From </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestStartDate_Admin" name="RequestStartDate_Admin" tabindex="1">
+                                                        <div class="input-group-btn">
+                                                            <label for="RequestStartDate_Admin" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Travel To </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestEndDate_Admin" name="RequestEndDate_Admin" tabindex="1">
+                                                        <div class="input-group-btn">
+                                                            <div id="RequestEndDate_AdminLbl" class="input-group-btn">
+                                                                <label for="RequestEndDate_Admin" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Request No. </label>
+                                                    <input id="RequestNo_Admin" name="RequestNo_Admin" type="number" value="" class="form-control no-spinners" tabindex="1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Requested Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="RequestedDate_Admin" name="RequestedDate_Admin" tabindex="1">
+                                                        <div class="input-group-btn">
+                                                            <label for="RequestedDate_Admin" class="btn btn-default"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="AdminRequestStatusDiv" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <label> Request Status </label>
+                                                    <select id="RequestStatus_Admin" class="form-control" tabindex="1"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group text-center">
+                                                    <a href="#" tabindex="1" onclick="FilterRequest('Admin',true);" class="btn btn-primary">Show Results <i class="fa fa-arrow-circle-right"></i></a>
+                                                    <a href="#" tabindex="1" onclick="ResetRequest();" class="btn btn-primary">Reset</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rze-tablecont table-overlay col-xs-12">
+                                    <div class="table-responsive">
+                                        <div id="rze-overlayAdmin"></div>
+                                        <table id="AdminRequestGrid" class="table">
+                                            <thead id="AdminRequestGridheadings">
+                                                <tr>
+                                                    <th id="Company_Admin" tabindex="1">Company <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestDate_Admin" tabindex="1">Requested Date <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down active" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestNo_Admin" tabindex="1">Request ID <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TravelDestination_Admin" tabindex="1">Destination<label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TravelStartDate_Admin" tabindex="1">Travel Start Date <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="TicketingTimeline_Admin" tabindex="1">TicketingTimeline <label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label></th>
+                                                    <th id="RequestStatus_Admin" tabindex="1">Status <!--<label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label><a tabindex="1" style="display:none" href="#" rel="Adminpopover" data-placement="bottom" data-popover-content="#rze-statusAdmin"><i id="filter" class="fa fa-filter" aria-hidden="true"></i></a>--></th>
+                                                    <th id="Action_Admin" tabindex="1">My Actions <!--<label class="rze-sortico"><i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></label>--></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="AdminTravelRequestGrid"></tbody>
+                                        </table>
+                                        <div id="AdminDashboardTabResultCount" class="rze-reslist"></div>
+                                    </div>
+                                </div>
+                                <!--Pop-over-->
+                                <div id="rze-statusAdmin" class="hide">
+                                    <div class="rze-statustitle">
+                                        <div>
+                                            <label class="checkbox-inline"><input id="showingAllFilterAdmin" onclick="ResetStatusFilterAdmin('All');" type="checkbox" tabindex="1">Showing All</label>
+                                            <a href="#" tabindex="1" onclick="ResetStatusFilterAdmin('Clear');" class="pull-right">Clear</a>
+                                        </div>
+                                    </div>
+                                    <div id="StatusFilterAdmin" class="rze-statuscont">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer"></footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+﻿/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    /*Dashboard*/
+    .rze-bg > div > div { margin-bottom: 10px; }
+    .rze-bg > div > div:last-child { margin-bottom: 0px; }
+
+    /*Fare-Finder*/
+    .rze-trip:first-child { padding: 0px 15px; }
+    .rze-trip:last-child { padding: 0px 15px; margin-top: 5px; }
+    .rze-ffcont { margin: 0 10px auto; }
+    .rze-trip:first-child > div:after { display: none; }
+
+    /*.rze-tablecont .footable-details > tbody > tr > th label.rze-sortico { display: none; }
+    .rze-tablecont .footable-details > tbody > tr > th a i.fa-filter { display: none; }*/
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+}
+
+@media only screen and (max-width : 1200px) {
+
+    /*Tabs*/
+    .slider { clear: both; display: block; overflow: hidden; border-top: 1px solid #ccc; }
+    #slider1 { margin-bottom: 0; padding: 10px 0; position: relative; }
+    #slider1 .viewport { float: none; }
+    #slider1 .overview li { float: left; }
+    #slider1 .buttons { position: absolute; }
+    .slider { display: block; text-align: center; }
+
+    /*Travel Request*/
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+
+    /*Header*/
+    .rzb2e-rightnav { position: absolute; top: 0px; right: 0px; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+    /*Travel Request*/
+    .rzb2e-viewdetwrap .rze-subhead .nav { padding: 0px; }
+    .rzb2e-viewdetwrap .subhead-title { margin-top: 0px; float: none; border-bottom: 1px solid #ccc; padding: 5px 10px; }
+    .rzb2e-viewdetwrap .subhead-title .rze-subreq { background: transparent; padding: 0px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li + li { margin-right: 30px; margin-left: 10px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li + li:last-child { margin-right: 0; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span { padding: 5px 0px; }
+    .rze-borbot { padding: 5px 0; }
+    .rze-revdet > div { margin: 2px 0; }
+
+    /*Footer*/
+    footer > div { text-align: center; }
+    footer ul li a { padding: 3px 5px; display: block; }
+    .rze-copyright { text-align: center; }
+    .rze-footer-label { text-align: center; }
+    .rze-mob-label a { float: none; display: inline-block; margin: 0px; }
+
+    .rze-mobcrefno { margin-top: 15px; }
+    .rze-fltdetls > div { text-align: center; }
+    .rze-chkout-btn { text-align: center; }
+}
+
+@media only screen and (min-width:480px) and (max-width : 992px) {
+
+    /*Fare-Finder*/
+    .rze-ffcont { margin: 0px 10px auto; }
+    .rze-trip:first-child { padding: 0px 15px; }
+    .rze-trip:last-child { padding: 0px 15px; }
+    .rze-ffcont { margin: 0 30px auto; }
+    .rze-trip:first-child > div:after { display: none; }
+
+    /*Flight OneWay*/
+    .rze-tripcontoneway { padding: 0px; }
+    .rze-1wayimg { padding: 0 10px; }
+    .rze-citycont { background: none; margin-top: 20px; }
+    .rze-citycont .rze-cityinn:first-child { margin-top: 0; display: inline-block; float: left; }
+    .rze-cityinn { margin-top: 0px; float: right; }
+    .rze-1wayimg img { max-width: 50px; margin-right: 10px; max-height: 35px; }
+    .rze-f1waytime { display: block; font-size: 11px; }
+    .rze-f1waydest { display: block; font-size: 14px; }
+    .rze-1way { display: inline-block; margin-top: 10px; float: left; margin-bottom: 12px; }
+    .rze-1way > div { display: inline-block; }
+    .rze-fdets { background: none; display: inline-block; /*padding: 10px;*/ margin-bottom: 0; font-size: 14px; }
+    .rze-fdets span { background: #e8f2fc; padding: 10px; }
+    .rze-tripcontoneway label { margin-bottom: 12px; display: block; float: right; font-size: 15px; margin-right: 10px; }
+}
+
+@media only screen and (max-width : 768px) {
+
+    /*Common*/
+    body { font-size: 13px; }
+    .xs-nomargin { margin: 0px; }
+    .xs-nopadding { padding: 0px !important; }
+    .xs-nofloat { float: none !important; }
+    .form-control { padding: 6px 5px; font-size: 12px; }
+    .blockMsg { top: 50% !important; margin-top: -140px !important; left: 50% !important; margin-left: -95px !important; width: auto !important; }
+    .blockUI h1 { font-size: 25px; width: auto !important; display: inline-block; color: #f9af24; }
+    .blockUI h1 i { font-size: 50px; display: inline-block; clear: both; display: block; width: auto; margin-bottom: 7px; color: #fff; }
+
+    /*Date Picker*/
+    html .ui-datepicker-multi-2.ui-datepicker-multi { background: #fff; width: 273px; max-width: 273px; z-index: 1000; }
+    .ui-datepicker-multi-2 .ui-datepicker-group { width: 100%; }
+    .ui-datepicker-multi .ui-datepicker-group table { width: 100%; margin: 0; }
+    .ui-datepicker-group { clear: both; float: none; }
+
+    /*Login*/
+    .rzb2e-loginwrap { padding: 100px 15px; }
+
+    /*header*/
+    header { position: relative; }
+    .navbar-collapse { width: 100%; }
+    .navbar-brand > img { padding-top: 5px; width: 160px; }
+    #slider { margin: 0 auto; width: 100%; }
+    #slider .rze-treq.nav-pills > li > a { padding: 5px; font-size: 13px; font-weight: bold; }
+    #slider .rze-treq.nav-pills > li > a > small { width: 70px; }
+    #slider .rze-treq.nav-pills > li > a > i.close-btn { height: 10px; width: 10px; }
+    #slider .rze-treq { left: 50%; position: relative; margin-left: -121px; }
+    #slider1 .buttons { position: absolute; }
+
+
+    /*Menu*/
+    .rzb2enav-cont .navbar-nav { margin: 0px -15px; }
+    .rzb2enav-cont .navbar-nav > li > a { min-height: 0px; padding: 15px 10px; text-align: center; }
+    .rzb2enav-cont .navbar-nav > li > a > span { display: none; }
+    .navbar-toggle { float: left; margin: 12px 0px; border: 0px; padding: 9px 5px 9px 10px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: transparent; }
+    .navbar-default .navbar-toggle .icon-bar { background-color: #f9992b; width: 20px; height: 3px; }
+    .xs-links a { margin: 6px 0; display: inline-block; padding: 5px 8px; color: #6f6f6f; font-size: 20px; }
+    /*.xs-links a:last-child { margin-right: 10px; }*/
+
+    /*Sub-Menu*/
+    .rze-subhead .nav-pills > li > a { margin-top: 10px; padding: 5px 8px; font-size: 13px; font-weight: bold; }
+    .subhead-title { padding: 4px 5px; margin-top: 2px; font-size: 24px; }
+    .subhead-title > div { padding-left: 23px; }
+    .subhead-title > div.rze-subdash { background-position: -45px 12px; }
+    .subhead-title > div.rze-subreq { background: none; padding: 0px; font-size: 16px; }
+    .subhead-title > div.rze-subtravel { background-position: -40px -274px; padding-left: 38px; }
+
+    /*Dashboard*/
+    .rze-dash-tabhead { font-size: 14px; }
+    .rze-dashcalendar { padding: 10px 0; }
+    .rze-dashcalendar span { padding: 5px; font-size: 13px; }
+    .rze-dashcalendar a { padding: 0 6px 4px; }
+    .rze-dash-count .count-det a { padding: 5px 7px 2px; border-radius: 15px 15px 0px 0px; font-size: 11px; }
+    .srch-req { padding: 10px; }
+    .srch-req a { padding: 0px 5px; font-size: 20px; }
+    .count-cont { padding: 0px; }
+
+    .rze-dash-count .count-det { margin-bottom: -1px; }
+    .rze-dash-count > div > span { width: 58px; }
+    .rze-count small { font-size: 15px; line-height: 5px; margin-top: 5px; }
+    .count-header { padding: 5px; }
+    .rze-bg h4 { margin-top: 15px; }
+    .table-overlay .table-responsive { overflow: auto; }
+    .rze-tablecont .table > tbody > tr > td { padding: 8px 5px; }
+    .rze-mob-calendar .rze-dashcalendar a { padding: 3px 8px 5px; margin-right: -4px; }
+    .rze-mob-calendar .rze-dashcalendar span { padding: 8px; margin-right: -4px; font-size: 13px; }
+
+    /*Admin Dashboard*/
+    .rze-admcont { margin: 0px; padding: 0px 5px; }
+    .rze-bg .rze-admcont > div { padding: 0px 5px; margin: 0px; }
+    .rze-admcont .rze-dash-count > div { padding: 10px 5px; }
+    .rze-admcont .rze-dash-count > div > span { width: 75px; }
+    .rze-admcont .rze-dash-count > div > span.rze-count { width: 58px; }
+    .rze-admcont .rze-count small { margin-top: 0px; display: block; min-height: 30px; line-height: 15px; }
+    .rze-admcont .rze-count small a { display: block; text-align: center; }
+
+    /*Calendar*/
+    .rze-selfsection .rze-dash-tabhead span.rze-tabtitle { padding: 8px 10px 0 10px; }
+    .rze-selfsection .rze-dash-tabhead #mainCalender { float: none; clear: both; padding: 5px 5px 10px; }
+    .rze-selfsection .rze-dash-tabhead #mainCalender #calender { padding: 0px; margin-top: 7px; }
+    .rze-selfsection .rze-dashcalendar a { padding: 2px 8px 4px; }
+    .rze-selfsection .rze-dashcalendar span { padding: 8px; }
+    .rze-selfsection .rze-tab-btn { position: absolute; top: 5px; right: 5px; }
+    .rze-selfsection .srch-req { padding: 5px; }
+    .rze-selfsection .srch-req a { font-size: 12px; padding: 0; height: auto; min-height: 0; }
+
+    /*Travel Request*/
+    .rzb2e-viewdetwrap .rze-subhead .nav { padding: 0; }
+    .rze-travelrequest h4 { padding-bottom: 5px; }
+    .rze-ffcont { margin: 0px 30px auto; }
+    .rze-budget .form-inline .form-control { width: auto; display: inline-block; }
+    .rze-borbot { padding: 0px; }
+    .rze-revdet > div { margin: 0px; }
+    .rzb2e-viewdetwrap .subhead-title { margin-top: 0px; float: none; border-bottom: 1px solid #ccc; padding: 8px 10px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li + li { margin-right: 10px; margin-left: 10px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li + li:last-child { margin-right: 0; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span { padding: 5px 0px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span > label { font-size: 12px; margin-bottom: 0; }
+    .rze-budget > div > .form-group { display: inline-block; }
+    .rze-budget > div > .form-group:last-child { padding: 0px; }
+    .rze-trbtn { text-align: center; }
+
+    /*Travel*/
+    .rze-ftabs .rze-ffcont { margin: 15px; }
+    .rze-budget .form-inline .form-control { width: auto; display: inline-block; }
+    .rze-revhiswrap > .row > div:last-child { border-left: 0px; }
+    .rze-revhiswrap > .row > div.rze-tcombot { padding: 5px 10px; border-top: 1px solid #b7b7b7; }
+    .rze-revhiswrap > .row > div.rze-tcomtop { padding: 5px; border-bottom: 1px solid #b7b7b7; }
+    .rze-viewreqbtns { text-align: center; }
+
+    /*Employee*/
+    .rze-empcont { padding: 10px; }
+    .rze-subhead .nav-pills > li.rze-emp-header > a { font-size: 15px; }
+    .rze-empcont .panel-default .panel-body { padding: 10px 0px; }
+    .rze-empcont .panel-group .panel-default .panel-heading h4 a { font-size: 14px; }
+    .rze-empcont .panel-group .panel-default .panel-body .form-group label { font-size: 13px; }
+    .rze-empcont .panel-group .panel-default .panel-body .form-group .input-group-btn label { font-size: 14px; }
+
+    /*FareFinder*/
+    ul.rez-ac-wrapper { list-style: none; margin: 0px; padding: 0 0 0 0px; z-index: 100; width: 243px; font-size: 12px; max-width: 290px; overflow: hidden; }
+    .farefinder .rze-ftabs { padding: 10px; }
+    .farefinder .rze-ftabs .rze-hoteltitle .tab-content .form-group { margin-bottom: 15px; }
+    .rze-ffcont { margin: 0 15px; }
+    .rze-prdimg { padding: 0px; width: 100%; text-align: center; }
+    .rze-prdcontwrap #theImg { float: none; }
+    .rze-prdcontwrap { text-align: center; }
+    .rze-prdnavcont { position: relative; right: 0; bottom: 0; padding: 0px; }
+    .rze-prdnav span { display: none; }
+    .rze-prdcontwrap .rze-pricingcont .rze-priceval { float: none; }
+    .rze-pricingcont .rze-price { margin: 10px 0; }
+    .rze-prdcont h3 { font-size: 20px; }
+    .rze-prdtittle { margin-top: 11px; font-size: 20px; }
+    #rze-prdnav a { font-size: 11px; padding-right: 5px; text-decoration: underline; }
+    .rze-trip:first-child { padding: 0px 15px; }
+    /*.rze-trip:last-child { padding: 0px; }*/
+    .rze-fltdetls > div.rza-fimg span { width: auto; }
+    .rze-trip:first-child > div:after { display: none; }
+    html #divMain.rze-flightContainer { padding: 0px 2px 10px 2px !important; }
+    .rze-fdets > i { padding: 0px 3px; }
+    .rze-fdets, .rze-fdettime, .rze-fdettime { font-weight: bold; font-size: 11px; }
+    .rze-fdetdate { font-weight: normal; font-size: 11px; }
+    .rze-time { font-size: 13px; margin: 0px; background: #ccc; padding: 7px 10px; }
+    .rze-ftimes { font-size: 11px; }
+    #Flightfilters { padding: 2px; }
+    .rze-flightheader { background: #1053a4; color: #fff; position: relative; }
+    .airline-title, .rze-rightelet { color: #ffffff; }
+
+    /*Flight*/
+    .rze-ftimes span { display: block; padding: 0px; }
+    .rze-ffdet span { display: block; padding-right: 0px; margin-bottom: 0px; }
+    .rze-flightContainer { margin-bottom: 10px; }
+    .rze-journydetails { padding: 0 10px; }
+    .rze-ftabscont { margin-top: 5px; }
+    .rze-fprefered { border: 1px solid #fff; color: #fff; }
+
+
+    /*Footer*/
+    footer > div { text-align: center; }
+    footer ul { display: block; }
+    footer ul li { display: block; }
+    footer ul li a { padding: 3px 5px; display: block; }
+    .rze-copyright { text-align: center; }
+    .rze-footer-label { text-align: center; }
+    .rze-mob-label a { float: none; display: inline-block; margin: 0px; }
+
+    /*Table*/
+    .rze-tablecont .footable-details > tbody > tr > td.rze-table-mob { display: table-cell !important; }
+    .row_main .btn-info { width: auto; font-size: 13px; padding: 5px; }
+    .rze-table-mob a.btn-primary { font-size: 13px; padding: 5px 8px; }
+    .rze-tablecont .footable-details > tbody > tr > td.rze-table-mob { display: table-cell !important; }
+    .rze-tablecont .table > thead > tr.footable-header > th:first-child { padding-left: 20px; }
+    .row_main .btn-info { width: auto; font-size: 13px; padding: 5px; }
+    .rze-table-mob a.btn-primary { font-size: 13px; padding: 5px 8px; }
+
+    /*Error Page*/
+    .rze-error-cont { width: 60%; }
+
+    /*Slider Tabs*/
+    #slider1 { margin-bottom: 0px; margin-top: 5px; }
+    
+    /*Hotel*/
+    .rze-hotelcin { margin-top: 10px;text-align: center;  }
+    .rze-createItinerary { text-align: center; }
+    #hotelResults .rze-createItinerary > div > span { padding: 0; margin-bottom: 10px; }
+    .rze-mobHotelItrDet { float: none !important; text-align: center; }
+    .rze-mobHotelItrDet input { float: none !important; }
+    .rze-mobHotelItrDet .rze-note { text-align: center; }
+    .rze-pricingcont .rze-select, .rze-pricingcont .rze-selectchk { margin-top: 0px; }
+    .rze-pricingcont .rze-select .btn, .rze-pricingcont .rze-selectchk .btn { margin-bottom: 10px; }
+    .rze-prdcontwrap { position: relative; }
+    .rze-prdimg { margin-top: 10px; }
+    .date_r, .date_l { float: none; display: inline-block; }
+    .rze-delhotel { position: absolute; top: -232px; right: 10px; font-size: 16px; color: #1053a4; }
+    .rze-chkout-btn { text-align: center; }
+}
+
+@media only screen and (width:768px) {
+
+    /*Header*/
+    .navbar-collapse { width: auto; }
+    .rzb2enav-cont .navbar-nav { margin: 0 -10px; }
+    .rzb2enav-cont .navbar-nav > li > a { padding: 19px 12px; }
+
+    /*Travel Request Details*/
+    .rze-revhiswrap > .row > div.rze-tcomtop { border-right: 1px solid #b7b7b7; padding: 10px; }
+    .rze-revhiswrap > .row > div.rze-tcombot { border-left: 1px solid #b7b7b7; padding: 10px; }
+
+    /*Footer*/
+    footer ul li.hidden-xs { display: none; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+}
+
+@media only screen and (min-width:480px) and (max-width : 525px) {
+
+    /*TMC Admin*/
+    .rze-admcont .rze-dash-count > div > span { width: 100%; background-position: center; }
+    .rze-admcont .rze-dash-count > div > span.rze-count { width: 100%; text-align: center; }
+    .rze-admcont .rze-count small { min-height: auto; }
+
+    /*Error Page*/
+    .rze-error-cont { width: 75%; }
+
+    /*Travel Request*/
+    .rze-revdet > div > label > span { display: block; }
+    .rzb2e-viewdetwrap .rze-subhead .nav { padding: 0 0 5px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span { padding: 2px 0px 2px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li + li { clear: both; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span > label { font-size: 12px; }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 479px) {
+
+    /*Login*/
+    .rzb2e-loginwrap { padding: 50px 15px; }
+    .rze-logincont { width: 100%; }
+    .rze-logindet { padding: 15px 0; }
+    .rze-loginlinks label { font-weight: normal; }
+
+    /*Dashboard*/
+    .rze-dash-count > div > span { display: block; text-align: center; float: none !important; width: 100%; }
+    .rze-dash-count > div > span:first-child { display: none; }
+    .rze-treq.nav-pills > li > a > i.close-btn { width: 10px; height: 10px; }
+    .rze-wrap .row > div.col-xs-6 { width: 100%; }
+
+    /*Tabs*/
+    .rze-treq.nav-pills > li > a { padding: 5px; text-align: left; }
+    .rze-treq.nav-pills > li > a > small { width: 70px; }
+    #slider1 .viewport { display: inline-block; height: 45px; width: 250px; }
+
+    /*Error Page*/
+    .rze-error-cont { width: 90%; padding: 30px 10px; }
+
+    /*Travel Request*/
+    .rze-travelrequest .form-group label { margin-bottom: 0; }
+    .rzf_addemp label { margin: 10px 0px; }
+    .rze-ffcont { margin: 0px 5px auto; }
+    .rze-travelrequest > .row > div { width: 100%; }
+    .rze-travelrequest .rzf_addemp label.rzb2e-block { display: none; }
+
+    /*TMC Admin*/
+    .rze-bg .rze-admcont > div { padding: 0px 5px; margin: 0px; }
+    .rze-bg .rze-admcont .rze-dash-count > div > span.rze-count { width: 100%; }
+    .rze-bg .rze-admcont .rze-count small { margin-top: 0px; display: block; min-height: 30px; line-height: 15px; }
+    .date_r { display: inline-block; float: none; font-size: 13px; }
+    .date_l { display: inline-block; float: none; font-size: 13px; }
+
+    /*TR Details*/
+    .rzb2e-viewdetwrap .rze-subhead .nav { padding: 0 0 5px; }
+    .rzb2e-viewdetwrap .rze-reqcreate .rze-subhead .nav { padding: 0; }
+    .rzb2e-viewdetwrap .subhead-title { margin-top: 0px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span { padding: 2px 0px 2px; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li + li { clear: both; }
+    .rzb2e-viewdetwrap .rze-subhead .nav-pills > li > span > label { font-size: 12px; }
+    .rze-viewreqbtns { text-align: center; }
+    .rze-borbot { padding: 5px 0px; }
+    .rzb2e-viewdetwrap .rze-itinerarydet .nav-pills > li + li { margin-left: -2px; }
+    .rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills > li { padding: 10px 12px 5px; border-bottom: 0px; }
+    .rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills > li > a { font-size: 12px; }
+    .rzb2e-viewdetwrap .rze-itinerarydet ul.nav-pills > li > a.rza-delitinerary { top: -1px; right: 2px; }
+    .rze-revdet > div { margin: 0px; padding: 0px; }
+    .rze-travelrequest .form-group.rzf_addemp { clear: both; margin-bottom: 5px; }
+    .closeTab { height: 10px; width: 10px; }
+    .rze-revdet div.col-xs-6 { width: 100%; }
+    .rze-budget > div { display: block; }
+
+    /*Flight OneWay*/
+    .rze-tripcontoneway { padding: 0px; }
+    .rze-1wayimg { padding: 0 10px; }
+    .rze-citycont { background: none; }
+    .rze-citycont .rze-cityinn:first-child { margin-top: 0; }
+    .rze-cityinn { margin-top: 0px; }
+    .rze-1wayimg { text-align: center; margin-bottom: 10px; }
+    .rze-1wayimg img { max-width: 50px; margin-right: 10px; max-height: 35px; }
+    .rze-f1waytime { display: inline-block; }
+    .rze-f1waydest { display: block; }
+    .rze-1way { display: inline-block; margin: 10px 0; }
+    .rze-1way > div.mrgntop15 { margin-top: 0px !important; }
+    .rze-1way > div { display: inline-block; }
+    .rze-res1waycont .rze-fdets { background: transparent; padding: 0 5px; margin: 10px 0; font-size: 15px; }
+    .rze-fdets span { background: #e8f2fc; padding: 10px; }
+    .rze-tripcontoneway label { margin-bottom: 12px; display: block; }
+    #divFlightPopUpDetailsDepartInfo { margin-top: 20px; }
+    .rze-layover { margin: 20px 0 0 0; }
+    #divFlightPopUpStopsInfo { text-align: center; }
+
+    /*Flight - Roundtrip*/
+    .rze-mobfltdet { clear: both; }
+    .rze-mobpreferdbtn { position: absolute; top: 0px; right: 0px; margin-right: 10px; }
+    .airline-title { float: none !important; display: block; border-bottom: 1px solid #fff; margin-right: 0px; }
+    .rze-ftabcontainer #divFlightPopUpBody { padding: 5px 30px; text-align: center; }
+    .rze-ftabcontainer #divFlightPopUpBody:nth-of-type(1) { padding: 15px 30px; }
+    .rze-flightdetailscont { background: transparent; box-shadow: 0px 0px 10px #a2a2a2; margin: 10px 0; padding: 10px 0; text-align: center; }
+    .rze-fltime { margin: 10px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; padding: 4px; }
+    #divFlightStops { clear: both; border: 1px solid #7b7b7b; padding: 3px; text-align: center; }
+    .rze-mobflightname { padding: 0; }
+    .fdet-fimg { float: none; max-height: 30px; }
+    .AirlineCarrier { padding-top: 10px; margin-top: 0px; }
+
+    /*Flight - Oneway*/
+    .rze-1wayresheader .airline-title { padding: 10px 0; }
+    #divFlightResultOneWay { margin-bottom: 10px; }
+    .rze-1wayresheader { background: #1053a4; padding: 0 10px; }
+    #divFlightResultOneWay .rze-ftabscont { margin-top: 0px; }
+    .rze-1waypricedet > div, .rze-1waypricedet > div > label, .rze-1waypricedet > div:first-child { color: #fff; }
+    .rze-tripcontoneway label { margin: 5px 0; }
+    .rze-mobbtn label.btn { position: absolute; top: 0px; right: 10px; }
+    .rze-mobbtn label.btn-info { margin-top: 8px; background: #fff !important; color: #1053a4 !important; width: auto; }
+    .rze-mobbtn label.btn-primary { margin-top: 8px; }
+    #divFlightResultOneWay label.btn { margin-top: 5px; }
+    .xs-text-center { text-align: center; }
+    #divFlightInfo { padding: 0; }
+    .rze-mobitr { text-align: center; margin-top: 10px; }
+    .rze-mobitr a.btn-primary { margin-bottom: 10px; width: 185px; }
+    .rze-mobitr a.btn-primary:last-child { margin-bottom: 0; }
+
+    
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select:focus,
+    textarea:focus,
+    input:focus { font-size: 16px; background: #eee; }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
+    textarea,
+    input { font-size: 16px; }
+}

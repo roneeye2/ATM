@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-
-namespace Inncrewin.ATM.Controllers
+﻿namespace Inncrewin.ATM.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Http;
+    using System.Web.Http;
+
     public class WithdrowController : ApiController
     {
         private readonly Application.IWithdrow withdrow;

@@ -1,24 +1,14 @@
-﻿using Autofac;
-using Autofac.Integration.WebApi;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Web;
-using System.Web.Http;
-
-using Autofac;
-using Autofac.Integration.WebApi;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Reflection;
-using System.Web;
-using System.Web.Http;  
-
-namespace Inncrewin.ATM
+﻿namespace Inncrewin.ATM
 {
+    using Autofac;
+    using Autofac.Integration.WebApi;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using System.Web;
+    using System.Web.Http;
+
     public class IocConfigurator
     {
         public static IContainer Container;
@@ -36,7 +26,8 @@ namespace Inncrewin.ATM
 
         private static IContainer RegisterServices(ContainerBuilder builder)
         {
-            //Register your Web API controllers.  
+            //Register your Web API controllers. 
+            //todo : should go to xml for better extensablity. 
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly()).PropertiesAutowired();
             builder.RegisterType<Application.Withdraw>().As<Application.IWithdrow>().InstancePerRequest();
             builder.RegisterType<Application.BankNote.One>().As<Application.BankNote.IBankNote>().InstancePerRequest();

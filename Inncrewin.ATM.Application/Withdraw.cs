@@ -24,6 +24,7 @@ namespace Inncrewin.ATM.Application
 
             foreach (var note in _availableNote.OrderByDescending(e => e.Amount))
             {
+                //todo : limit count upto 20.
                 int count = amount / note.Amount;
                 amount = amount % note.Amount;
                 if (count > 0)

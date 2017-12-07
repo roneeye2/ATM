@@ -7,3 +7,7 @@ C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\I
 C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM.Application.BankNote\obj\Debug\Inncrewin.ATM.Application.BankNote.csprojResolveAssemblyReference.cache
 C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM.Application.BankNote\obj\Debug\Inncrewin.ATM.Application.BankNote.dll
 C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM.Application.BankNote\obj\Debug\Inncrewin.ATM.Application.BankNote.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application.BankNote\bin\Debug\Inncrewin.ATM.Application.BankNote.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application.BankNote\bin\Debug\Inncrewin.ATM.Application.BankNote.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application.BankNote\obj\Debug\Inncrewin.ATM.Application.BankNote.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application.BankNote\obj\Debug\Inncrewin.ATM.Application.BankNote.pdb

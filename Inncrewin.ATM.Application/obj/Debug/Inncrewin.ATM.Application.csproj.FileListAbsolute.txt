@@ -12,3 +12,10 @@ C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\I
 C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM.Application\obj\Debug\Inncrewin.ATM.Application.csprojResolveAssemblyReference.cache
 C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM.Application\obj\Debug\Inncrewin.ATM.Application.dll
 C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin.ATM\Inncrewin.ATM.Application\obj\Debug\Inncrewin.ATM.Application.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\bin\Debug\Inncrewin.ATM.Application.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\bin\Debug\Inncrewin.ATM.Application.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\bin\Debug\Inncrewin.ATM.Application.BankNote.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\bin\Debug\Inncrewin.ATM.Application.BankNote.pdb
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\obj\Debug\Inncrewin.ATM.Application.csprojResolveAssemblyReference.cache
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\obj\Debug\Inncrewin.ATM.Application.dll
+C:\Users\Monika\Documents\Visual Studio 2015\Projects\Assignment\Inncrewin\Inncrewin.ATM.Application\obj\Debug\Inncrewin.ATM.Application.pdb

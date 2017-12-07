@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inncrewin.ATM", "Inncrewin.ATM\Inncrewin.ATM.csproj", "{95C2AC67-693B-47F4-8B40-FAABA3CBE200}"
 EndProject
@@ -17,11 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dto", "Dto", "{529B5EC2-C1B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{027E343C-26B7-49D6-A154-5DBC55D4A49B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inncrewin.ATM.UI", "RZP.CBT.B2EWeb\Inncrewin.ATM.UI.csproj", "{6CFADDB3-A556-4585-9998-F3986A665759}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inncrewin.ATM.Application", "Inncrewin.ATM.Application\Inncrewin.ATM.Application.csproj", "{A94002F1-49D4-4159-9FFB-B30FADA53234}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inncrewin.ATM.Application.BankNote", "Inncrewin.ATM.Application.BankNote\Inncrewin.ATM.Application.BankNote.csproj", "{1C738F1A-1E19-4620-8F31-FE888D1FED25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inncrewin.ATM.UI", "..\Inncrewin.ATM\Inncrewin.ATM.UI\Inncrewin.ATM.UI.csproj", "{6CFADDB3-A556-4585-9998-F3986A665759}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{95C2AC67-693B-47F4-8B40-FAABA3CBE200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C2AC67-693B-47F4-8B40-FAABA3CBE200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C2AC67-693B-47F4-8B40-FAABA3CBE200}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CFADDB3-A556-4585-9998-F3986A665759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CFADDB3-A556-4585-9998-F3986A665759}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CFADDB3-A556-4585-9998-F3986A665759}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CFADDB3-A556-4585-9998-F3986A665759}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A94002F1-49D4-4159-9FFB-B30FADA53234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A94002F1-49D4-4159-9FFB-B30FADA53234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A94002F1-49D4-4159-9FFB-B30FADA53234}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,14 +41,18 @@ Global
 		{1C738F1A-1E19-4620-8F31-FE888D1FED25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C738F1A-1E19-4620-8F31-FE888D1FED25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C738F1A-1E19-4620-8F31-FE888D1FED25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFADDB3-A556-4585-9998-F3986A665759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFADDB3-A556-4585-9998-F3986A665759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFADDB3-A556-4585-9998-F3986A665759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFADDB3-A556-4585-9998-F3986A665759}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{95C2AC67-693B-47F4-8B40-FAABA3CBE200} = {BD60EBEF-6A05-4549-8B4B-2362A46C9BBF}
-		{6CFADDB3-A556-4585-9998-F3986A665759} = {027E343C-26B7-49D6-A154-5DBC55D4A49B}
 		{A94002F1-49D4-4159-9FFB-B30FADA53234} = {A9EFB810-0B18-4667-9AD6-2BC5859216BA}
 		{1C738F1A-1E19-4620-8F31-FE888D1FED25} = {A9EFB810-0B18-4667-9AD6-2BC5859216BA}
+		{6CFADDB3-A556-4585-9998-F3986A665759} = {027E343C-26B7-49D6-A154-5DBC55D4A49B}
 	EndGlobalSection
 EndGlobal
